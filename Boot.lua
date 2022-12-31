@@ -3,7 +3,7 @@ if not term.isColor() then
 end
 
 local API = {
-    [1] = {"SHA256", "sha256"},
+    [1] = {"SHA256", "Wrench/API/sha256.lua"},
     [2] = {"GuiScreens", "Wrench/API/GuiScreens.lua"}
 }
 
@@ -18,16 +18,16 @@ local updateBar = function()
     term.setBackgroundColor(colors.white)
 end
 
-/*local cPrint = functionlocal function centerPrint(text, ny)
-    if type(text) == "table" then
-    for _, e in pairs(text) do centerPrint(e) 
-    end
-else
-    local x, y = term.getCursorPos()
-    local w,h = term.getSize()
-    term.setCursorPos(w/2 - text:len()/2, ny or y)
-    print(text)
-end*/
+--local cPrint = functionlocal function centerPrint(text, ny)
+   -- if type(text) == "table" then
+ --   for _, e in pairs(text) do centerPrint(e) 
+   -- end
+--else
+  --  local x, y = term.getCursorPos()
+    --local w,h = term.getSize()
+    --term.setCursorPos(w/2 - text:len()/2, ny or y)
+    --print(text)
+--end*/
 
 local logo = "Wrench OS"                                            
 
@@ -48,8 +48,8 @@ paintutils.drawLine(50,16,50,18,colors.blue)
 term.setBackgroundColor(colors.white)
 term.setTextColor(colors.lime)
 for i = 1, #API do
-    os.unloadAPI(API[1])
-    os.loadAPI(API[1])
+    os.unloadAPI("Wrench/API/sha256.lua")
+    os.loadAPI("Wrench/API/sha256.lua")
     term.setCursorPos(1,15)
     term.clearLine()
     print("Loading API:"..API[1])

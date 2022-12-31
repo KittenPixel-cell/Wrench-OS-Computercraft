@@ -52,7 +52,8 @@ for i = 1, #API do
     os.loadAPI(API[2])
     term.setCursorPos(1,15)
     term.clearLine()
-    cPrint("Loading API:"..API[1])
+    print("Loading API:"..API[1])
+    --cPrint("Loading API:"..API[1])
     updateBar()
 
 end

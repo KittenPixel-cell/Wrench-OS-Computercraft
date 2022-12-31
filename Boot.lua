@@ -4,7 +4,7 @@ end
 
 local API = {
     [1] = {"SHA256", "sha256"},
-    [2] = {"someRandomFunctions", "random"}
+    [2] = {"GuiScreens", "Wrench/API/GuiScreens.lua"}
 }
 
 local total
@@ -29,15 +29,15 @@ else
     print(text)
 end*/
 
-local logo = "Wrench OS"
+local logo = "Wrench OS"                                            
 
 term.setBackgroundColor(colors.white)
 term.setTextColor(colors.orange)
 
 term.clear()
 term.setCursorPos(1,1)
-for i = 1,15 do 
-    write(logo[i])
+for i = 1,1 do 
+    write("Wrench OS")
 end
 
 paintutils.drawLine(2,16,50,16,colors.blue)
@@ -48,8 +48,8 @@ paintutils.drawLine(50,16,50,18,colors.blue)
 term.setBackgroundColor(colors.white)
 term.setTextColor(colors.lime)
 for i = 1, #API do
-    os.unloadAPI(API[2])
-    os.loadAPI(API[2])
+    os.unloadAPI(API[1])
+    os.loadAPI(API[1])
     term.setCursorPos(1,15)
     term.clearLine()
     print("Loading API:"..API[1])

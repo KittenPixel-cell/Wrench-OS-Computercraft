@@ -18,7 +18,7 @@ local updateBar = function()
     term.setBackgroundColor(colors.white)
 end
 
-local cPrint = functionlocal function centerPrint(text, ny)
+/*local cPrint = functionlocal function centerPrint(text, ny)
     if type(text) == "table" then
     for _, e in pairs(text) do centerPrint(e) 
     end
@@ -27,7 +27,7 @@ else
     local w,h = term.getSize()
     term.setCursorPos(w/2 - text:len()/2, ny or y)
     print(text)
-end
+end*/
 
 local logo = "Wrench OS"
 

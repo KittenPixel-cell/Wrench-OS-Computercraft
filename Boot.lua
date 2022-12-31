@@ -19,7 +19,9 @@ local updateBar = function()
 end
 
 local cPrint = functionlocal function centerPrint(text, ny)
-    if type(text) == "table" then for _, e in pairs(text) do centerPrint(e) end
+    if type(text) == "table" then
+    for _, e in pairs(text) do centerPrint(e) 
+    end
 else
     local x, y = term.getCursorPos()
     local w,h = term.getSize()

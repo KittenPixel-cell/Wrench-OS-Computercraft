@@ -73,5 +73,5 @@ if nOption  == 1 then
 term.clear()
 print("CraftOS 1.8")
 else
-shell.run("Boot.lua")
+shell.run("boot.lua")
 end

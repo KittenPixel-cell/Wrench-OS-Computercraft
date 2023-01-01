@@ -62,7 +62,8 @@ end
 sleep(4)
 term.clear()
 term.setCursorPos(1,1)
-login()
+shell.run("Wrench/File.lua")
+--login()
 
 local login = function()
 local userPath = "Wrench/Data/Users"

@@ -46,7 +46,6 @@ end
 
 sleep(4)
 term.clear()
-login()
 
 local login = function()
 local userPath = "Wrench/Data/Users"

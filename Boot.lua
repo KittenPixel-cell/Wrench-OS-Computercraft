@@ -35,7 +35,7 @@ term.setTextColor(colors.orange)
 term.clear()
 term.setCursorPos(1,1)
 for i = 1,11 do 
-    write(logo1[i])
+    write(logo[i])
 end
 
 paintutils.drawLine(7,16,44,16,colors.blue)
@@ -72,7 +72,7 @@ term.clear()
 
 term.setCursorPos( 12,i )
 for i = 1,11 do 
-    write(logo1[i])
+    write(logo[i])
 end
     term.setCursorPos( 1,1 )
 paintutils.drawLine(12,6,39,6,colors.black)

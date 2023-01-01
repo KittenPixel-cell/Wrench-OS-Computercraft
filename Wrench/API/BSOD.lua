@@ -18,7 +18,6 @@ functionInit(msg)
     term.clear()
     term.setCursorPos(1,1)
     term.setBackgroundColor(colors.blue
-    term.setTextColor(colors.white)
     for i = 1,12 do
         print(logo[i])
     end

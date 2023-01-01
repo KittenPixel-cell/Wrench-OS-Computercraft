@@ -46,10 +46,10 @@ end
 
 sleep(4)
 term.clear()
-
+login()
 
 local login = function()
-    local userPath = "Wrench/Data/Users"
+local userPath = "Wrench/Data/Users"
 local bLogin = true
 local pass = ""
 local user = ""

@@ -64,7 +64,8 @@ end
 
 sleep(4)
 term.clear()
-BSOD.Init("API GuiScreens: Not Detected!")
+shell.run("Wrench/Desktop.lua")
+--BSOD.Init("API GuiScreens: Not Detected!")
 --shell.run("Wrench/File.lua")
 
 local login = function()

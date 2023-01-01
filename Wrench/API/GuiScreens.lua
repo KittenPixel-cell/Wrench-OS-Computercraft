@@ -20,3 +20,21 @@ local mainLogo = function ( mode )
         print( logo[i] )
     end
 end
+
+local loginBar = function()
+    paintutils.drawLine(12,6,39,6,colors.black)
+    paintutils.drawLine(12,12,39,12,colors.black)
+    paintutils.drawLine(12,6,12,12,colors.black)
+    paintutils.drawLine(39, 6,39,12,colors.black)
+    paintutils.drawLine(14, 9,37,12,colors.white)
+    paintutils.drawLine(14, 11,37,11,colors.white)
+    term.setCursorPos(14,8)
+    term.setTextColor(colors.black)
+    term.setBackgroundColor(colors.white)
+    write("Username:")
+    term.setCursorPos(14,10)
+    write("Password:")
+
+    term.setTextColor(colors.white)
+    term.setBackgroundColor(colors.black)
+end

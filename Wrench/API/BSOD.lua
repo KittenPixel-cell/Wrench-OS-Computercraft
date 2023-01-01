@@ -14,10 +14,10 @@ local logo = {
     [[                                       ]]
 }
 
-functionInit(msg)
+function Init(msg)
     term.clear()
     term.setCursorPos(1,1)
-    term.setBackgroundColor(colors.blue
+    term.setBackgroundColor(colors.blue)
     for i = 1,12 do
         print(logo[i])
     end

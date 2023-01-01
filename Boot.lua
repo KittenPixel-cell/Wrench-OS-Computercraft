@@ -4,7 +4,8 @@ end
 
 local API = {
     [1] = {"SHA256", "sha256"},
-    [2] = {"GuiScreens", "Wrench/API/GuiScreens.lua"}
+    [2] = {"GuiScreens", "Wrench/API/GuiScreens"},
+    [3] = {"BSOD", "Wrench/API/BSOD"}
 }
 
 local total = 0
@@ -48,6 +49,8 @@ term.setTextColor(colors.lime)
 for i = 1, #API do
     os.unloadAPI(API[2][2])
     os.loadAPI(API[2][2])
+    os.unloadAPI(API[3][2])
+    os.loadAPI(API[3][2])
     term.setCursorPos(1,15)
     term.clearLine()
     print("                    Loading OS")
@@ -61,9 +64,8 @@ end
 
 sleep(4)
 term.clear()
-term.setCursorPos(1,1)
-shell.run("Wrench/File.lua")
---login()
+BSOD.Init("test")
+--shell.run("Wrench/File.lua")
 
 local login = function()
 local userPath = "Wrench/Data/Users"

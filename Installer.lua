@@ -72,9 +72,9 @@ if nOption  == 1 then
 term.clear()
 shell.run("wget https://raw.githubusercontent.com/KittenPixel-cell/Wrench-OS-Computercraft/main/Startup.lua startup.lua")
 shell.run("wget https://raw.githubusercontent.com/KittenPixel-cell/Wrench-OS-Computercraft/main/Boot.lua boot.lua")
-shell.run("wget https://raw.githubusercontent.com/KittenPixel-cell/Wrench-OS-Computercraft/main/Wrench/API/GuiScreens.lua Wrench/API/GuiScreens.lua")
+shell.run("wget https://raw.githubusercontent.com/KittenPixel-cell/Wrench-OS-Computercraft/main/Wrench/API/GuiScreens.lua Wrench/API/GuiScreens")
 shell.run("wget https://raw.githubusercontent.com/KittenPixel-cell/Wrench-OS-Computercraft/main/Wrench/File.lua Wrench/File.lua")
-shell.run("wget https://raw.githubusercontent.com/KittenPixel-cell/Wrench-OS-Computercraft/main/Wrench/API/BSOD.lua Wrench/API/BSOD.lua")
+shell.run("wget https://raw.githubusercontent.com/KittenPixel-cell/Wrench-OS-Computercraft/main/Wrench/API/BSOD.lua Wrench/API/BSOD")
    shell.run("wget https://raw.githubusercontent.com/KittenPixel-cell/Wrench-OS-Computercraft/main/Wrench/IMGS/Wrench.nfp Wrench/IMGS/Wrench.nfp")
 else
 term.clear()

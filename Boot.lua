@@ -73,7 +73,7 @@ while bLogin do
     local evt = {os.pullEvent()}
     local currX, currY = term.getCursorPos()
 
-    if evt[] == "mouse_click" then
+    if evt[1] == "mouse_click" then
         local x=evt[3]
         local y=evt[4]
         if x >= 14 and x <= 39 and y == 9 then

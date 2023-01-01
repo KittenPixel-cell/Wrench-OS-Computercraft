@@ -38,8 +38,6 @@ for i = 1, #API do
     term.setCursorPos(1,15)
     term.clearLine()
     print("                    Loading OS")
-    sleep(2)
-    print("           Loading API: GuiScreens")
     --cPrint("Loading API:"..API[1])
     updateBar()
 end

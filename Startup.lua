@@ -34,7 +34,7 @@ local function drawFrontend()
    printCentered( math.floor(h/2) - 3, "")
    printCentered( math.floor(h/2) - 2, "Boot Menu" )
    printCentered( math.floor(h/2) - 1, "")
-   printCentered(math.floor(h / 2) + 0, ((nOption == 1 and "[ CraftOS   ]") or "CraftOS"))﻿
+   printCentered( math.floor(h/2) + 1, ((nOption == 2) and "[ CraftOS   ]") or "CraftOS" )
    printCentered( math.floor(h/2) + 1, ((nOption == 2) and "[ WrenchOS  ]") or "WrenchOS" )
    printCentered( math.floor(h/2) + 4, "")
 end

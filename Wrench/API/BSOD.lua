@@ -25,4 +25,8 @@ function Init(msg)
     term.setCursorPos(1,15)
     term.setTextColor(colors.red)
     print("BSOD: Critical Error detected: "..msg)
+    print("Rebooting")
+    textutils.slowPrint("##############")
+    sleep(2)
+    os.reboot
 end

@@ -33,7 +33,7 @@ local function drawFrontend()
    printCentered( math.floor(h/2) - 3, "")
    printCentered( math.floor(h/2) - 2, "Boot Menu" )
    printCentered( math.floor(h/2) - 1, "")
-   printCentered( math.floor(h/2) + 0, ((nOption == 1 and  "[ Install ]") or "Install")
+   printCentered( math.floor(h/2) + 0, ((nOption == 1) and  "[ Install ]") or "Install")
    printCentered( math.floor(h/2) + 1, ((nOption == 2) and "[ Cancel  ]") or "Cancel" )
    printCentered( math.floor(h/2) + 4, "")
 end

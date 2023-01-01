@@ -16,14 +16,26 @@ local updateBar = function()
     term.setBackgroundColor(colors.black)
 end
 
-local logo = "Wrench OS"                                            
+local logo = {
+ [[                  _________    ]],
+ [[                 /      \  \   ]],
+ [[                /        \  \  ]],
+ [[  _____________/          \___\]],
+ [[ |                             ]],
+ [[ |                             ]],
+ [[ |                             ]],
+ [[ |_____________         ____   ]],
+ [[               \       /    /  ]],
+ [[                \    /    /    ]],
+ [[                 \__/____/     ]]
+}                                          
 
 term.setTextColor(colors.orange)
 
 term.clear()
 term.setCursorPos(1,1)
-for i = 1,1 do 
-    write("                    Wrench OS")
+for i = 1,11 do 
+    write(logo1[i])
 end
 
 paintutils.drawLine(7,16,44,16,colors.blue)
@@ -58,8 +70,26 @@ local user = ""
 term.setBackgroundColor(colors.black)
 term.clear()
 
-GuiScreens.mainLogo("bLeft")
-GuiScreens.loginBar()
+term.setCursorPos( 12,i )
+for i = 1,11 do 
+    write(logo1[i])
+end
+    term.setCursorPos( 1,1 )
+paintutils.drawLine(12,6,39,6,colors.black)
+    paintutils.drawLine(12,12,39,12,colors.black)
+    paintutils.drawLine(12,6,12,12,colors.black)
+    paintutils.drawLine(39, 6,39,12,colors.black)
+    paintutils.drawLine(14, 9,37,12,colors.white)
+    paintutils.drawLine(14, 11,37,11,colors.white)
+    term.setCursorPos(14,8)
+    term.setTextColor(colors.black)
+    term.setBackgroundColor(colors.white)
+    write("Username:")
+    term.setCursorPos(14,10)
+    write("Password:")
+
+    term.setTextColor(colors.white)
+    term.setBackgroundColor(colors.black)
 
 local writeVars = function()
     term.setCursorPos(14,9)

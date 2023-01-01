@@ -71,6 +71,7 @@ term.clear()
 --Conditions
 if nOption  == 1 then
 term.clear()
+term.setCursorPos(1,1)
 print("CraftOS 1.8")
 else
 shell.run("boot.lua")

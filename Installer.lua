@@ -74,6 +74,7 @@ shell.run("wget https://raw.githubusercontent.com/KittenPixel-cell/Wrench-OS-Com
 shell.run("wget https://raw.githubusercontent.com/KittenPixel-cell/Wrench-OS-Computercraft/main/Boot.lua boot.lua")
 shell.run("wget https://raw.githubusercontent.com/KittenPixel-cell/Wrench-OS-Computercraft/main/Wrench/API/GuiScreens.lua Wrench/API/GuiScreens.lua")
 shell.run("wget https://raw.githubusercontent.com/KittenPixel-cell/Wrench-OS-Computercraft/main/Wrench/File.lua Wrench/File.lua")
+   shell.run("wget https://raw.githubusercontent.com/KittenPixel-cell/Wrench-OS-Computercraft/main/Wrench/API/BSOD.lua Wrench/API/BSOD.lua")
 else
 term.clear()
 print("Install Canceled Rebooting...")

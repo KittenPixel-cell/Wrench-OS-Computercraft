@@ -70,9 +70,9 @@ term.clear()
 --Conditions
 if nOption  == 1 then
 term.clear()
-wget https://raw.githubusercontent.com/KittenPixel-cell/Wrench-OS-Computercraft/main/Startup.lua startup.lua
-wget https://raw.githubusercontent.com/KittenPixel-cell/Wrench-OS-Computercraft/main/Boot.lua boot.lua
-wget https://raw.githubusercontent.com/KittenPixel-cell/Wrench-OS-Computercraft/main/Wrench/API/GuiScreens.lua Wrench/API/GuiScreens.lua
+shell.run("wget https://raw.githubusercontent.com/KittenPixel-cell/Wrench-OS-Computercraft/main/Startup.lua startup.lua")
+shell.run("wget https://raw.githubusercontent.com/KittenPixel-cell/Wrench-OS-Computercraft/main/Boot.lua boot.lua")
+shell.run("wget https://raw.githubusercontent.com/KittenPixel-cell/Wrench-OS-Computercraft/main/Wrench/API/GuiScreens.lua Wrench/API/GuiScreens.lua")
 else then
 term.clear()
 print("Install Canceled Rebooting...")

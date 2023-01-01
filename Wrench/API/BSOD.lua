@@ -28,5 +28,5 @@ function Init(msg)
     print("Rebooting")
     textutils.slowPrint("##############")
     sleep(2)
-    os.reboot
+    os.reboot()
 end
